@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krust Cafe — Real Sourdough. Serious Coffee.</title>
+<meta name="description" content="Premium cafe in Indiranagar, Bengaluru. Small-batch sourdough, single-origin brews, bakes that sell out. Reserve a table on WhatsApp in 60 seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800;900&family=Space+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- cinematic preloader -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <p class="pre-brand mono-tag">KRUST CAFE · ULTRASITE</p>
+    <p class="pre-word" id="preWord">BREW</p>
+    <div class="pre-bar"><span id="preBarFill"></span></div>
+    <p class="pre-count"><span id="preCount">0</span>%</p>
+  </div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Krust Cafe home">
+    <span class="brand-mark">KC</span>
+    <span class="brand-name">Krust <em>Cafe</em></span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#services">Menu</a>
+    <a href="#bake">Daily Bake</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a data-magnetic class="btn btn-glow btn-sm" href="#book">Reserve</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow reveal-line"><span class="mono-tag">INDIRANAGAR · BENGALURU</span> &nbsp;·&nbsp; namaste, coffee lovers.</p>
+      <h1 class="hero-title" aria-label="Real sourdough. Serious coffee. Zero shortcuts.">
+        <span class="line"><span class="line-inner">REAL SOURDOUGH.</span></span>
+        <span class="line"><span class="line-inner">SERIOUS <em>COFFEE.</em></span></span>
+        <span class="line"><span class="line-inner dim">ZERO SHORTCUTS.</span></span>
+      </h1>
+      <p class="hero-sub">Small-batch sourdough, single-origin brews, bakes that sell out by evening — Indiranagar's worst-kept secret. Swaad hi pehchaan hai. Come hungry.</p>
+      <div class="hero-ctas">
+        <a data-magnetic class="btn btn-glow" href="#book">Reserve on WhatsApp</a>
+        <a class="btn btn-ghost" href="#services">View menu</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-count="4.8" data-decimals="1">0</span><span class="stat-star">★</span><span class="stat-label">Google rating</span></div>
+        <div class="stat"><span class="stat-num" data-count="120" data-suffix="+">0</span><span class="stat-label">bakes out daily</span></div>
+        <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">years in Indiranagar</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="aurora aur-1"></div>
+      <div class="aurora aur-2"></div>
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="arch"></div>
+      <div class="float-card fc-1"><span class="mono-tag">TODAY</span><strong>Sourdough out at 8 AM</strong></div>
+      <div class="float-card fc-2"><span class="mono-tag">SIGNATURE</span><strong>Basque Cheesecake ₹349</strong></div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Sourdough Pizza</span><i>✦</i><span>Basque Cheesecake</span><i>✦</i><span>Vietnamese Iced Coffee</span><i>✦</i><span>Butter Croissant</span><i>✦</i><span>Weekend Brunch</span><i>✦</i><span>48-hr Ferment</span><i>✦</i>
+      <span>Sourdough Pizza</span><i>✦</i><span>Basque Cheesecake</span><i>✦</i><span>Vietnamese Iced Coffee</span><i>✦</i><span>Butter Croissant</span><i>✦</i><span>Weekend Brunch</span><i>✦</i><span>48-hr Ferment</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ============ SERVICES / BENTO ============ -->
+  <section class="section" id="services">
+    <div class="section-head wipe">
+      <p class="eyebrow"><span class="mono-tag">01 — MENU</span></p>
+      <h2 class="section-title">Baked at dawn.<br>Gone by <em>dusk.</em></h2>
+      <p class="section-sub">Everything fermented, proofed or brewed in-house. When the day's batch sells out, it's gone — that's the deal with real baking.</p>
+    </div>
+    <div class="bento">
+       <article data-tilt class="card card-lg reveal" data-service="Wood-Fired Sourdough Pizza">
+        <div class="card-art art-1" aria-hidden="true"></div>
+        <p class="mono-tag">MOST LOVED</p>
+        <h3>Wood-Fired Sourdough Pizza</h3>
+        <p>48-hour fermented base, blistered in our wood oven. Margherita to burnt-garlic prawn.</p>
+        <div class="card-foot"><span class="price">₹549</span><button class="link-book" data-service="Wood-Fired Sourdough Pizza">Reserve →</button></div>
+      </article>
+       <article data-tilt class="card card-lg reveal" data-service="Weekend Brunch Platter">
+        <div class="card-art art-2" aria-hidden="true"></div>
+        <p class="mono-tag">SAT–SUN ONLY</p>
+        <h3>Weekend Brunch Platter</h3>
+        <p>Shakshuka, sourdough toast stack, whipped ricotta, cold brew. Feeds two very happily.</p>
+        <div class="card-foot"><span class="price">₹799</span><button class="link-book" data-service="Weekend Brunch Platter">Reserve →</button></div>
+      </article>
+       <article data-tilt class="card reveal" data-service="Basque Cheesecake">
+        <p class="mono-tag">SELLS OUT DAILY</p>
+        <h3>Basque Cheesecake</h3>
+        <p>Burnt top, molten centre. Baked fresh every morning, gone by six.</p>
+        <div class="card-foot"><span class="price">₹349</span><button class="link-book" data-service="Basque Cheesecake">Reserve →</button></div>
+      </article>
+       <article data-tilt class="card reveal" data-service="Vietnamese Iced Coffee">
+        <p class="mono-tag">SINGLE ORIGIN</p>
+        <h3>Vietnamese Iced Coffee</h3>
+        <p>Slow-dripped robusta, condensed milk, crushed ice. Dangerous.</p>
+        <div class="card-foot"><span class="price">₹249</span><button class="link-book" data-service="Vietnamese Iced Coffee">Reserve →</button></div>
+      </article>
+       <article data-tilt class="card reveal" data-service="Butter Croissant">
+        <p class="mono-tag">LAMINATED 27 LAYERS</p>
+        <h3>Butter Croissant</h3>
+        <p>French butter, three-day lamination. Shatters exactly like it should.</p>
+        <div class="card-foot"><span class="price">₹149</span><button class="link-book" data-service="Butter Croissant">Reserve →</button></div>
+      </article>
+       <article data-tilt class="card reveal" data-service="Sourdough Loaf (Takeaway)">
+        <p class="mono-tag">PRE-ORDER ONLY</p>
+        <h3>Sourdough Loaf — Takeaway</h3>
+        <p>Whole 800g country loaf, 48-hr ferment. Order by 6 PM, collect next morning.</p>
+        <div class="card-foot"><span class="price">₹299</span><button class="link-book" data-service="Sourdough Loaf (Takeaway)">Pre-order →</button></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ MANIFESTO / SIGNATURE SCROLL MOMENT ============ -->
+  <section class="manifesto" id="manifesto">
+    <div class="manifesto-pin">
+      <p class="eyebrow"><span class="mono-tag">THE HOUSE RULES</span></p>
+      <h2 class="manifesto-lines">
+        <span class="m-line">Fermented 48 hours.</span>
+        <span class="m-line">Baked at dawn.</span>
+        <span class="m-line">Zero <em>shortcuts.</em></span>
+        <span class="m-line">All crust.</span>
+      </h2>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="section" id="reviews">
+    <div class="section-head wipe">
+      <p class="eyebrow"><span class="mono-tag">02 — PROOF</span></p>
+      <h2 class="section-title">Indiranagar <em>noticed.</em></h2>
+    </div>
+    <div class="reviews">
+      <figure class="review reveal">
+        <blockquote>"The sourdough pizza crust alone is worth the trip. Chewy, charred, perfect. My weekend default now."</blockquote>
+        <figcaption><strong>Divya S.</strong><span class="mono-tag">INDIRANAGAR · REGULAR</span></figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>"Basque cheesecake sold out twice before I got a slice. Third time I pre-ordered on WhatsApp like a sane person."</blockquote>
+        <figcaption><strong>Arjun M.</strong><span class="mono-tag">KORAMANGALA · CHEESECAKE CONVERT</span></figcaption>
+      </figure>
+      <figure class="review reveal">
+        <blockquote>"Worked from here all afternoon — great coffee, faster WiFi, zero side-eye. The brunch platter is criminal."</blockquote>
+        <figcaption><strong>Zoya K.</strong><span class="mono-tag">HSR · REMOTE WORKER</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ DAILY BAKE FEATURE ============ -->
+  <section class="section" id="bake">
+    <div class="bridal reveal">
+      <div class="bridal-copy">
+        <p class="eyebrow"><span class="mono-tag">03 — THE DAILY BAKE</span></p>
+        <h2 class="section-title">Out of the oven<br>at <em>8 AM.</em></h2>
+        <p>Our sourdough ferments for 48 hours and bakes twice daily. The morning batch rarely survives past lunch — pre-order on WhatsApp and it's yours, still warm.</p>
+        <ul class="checklist">
+          <li>48-hour fermented sourdough, baked twice daily</li>
+          <li>Whole loaves for takeaway — pre-order by 6 PM</li>
+          <li>Day-old bakes half price after 8 PM, never wasted</li>
+        </ul>
+        <div class="bridal-foot"><span class="price-lg">₹299 <small>whole loaf</small></span><a data-magnetic class="btn btn-glow" href="#book" data-service-link="Sourdough Loaf (Takeaway)">Pre-order my loaf</a></div>
+      </div>
+      <div class="bridal-art" aria-hidden="true"><div class="arch arch-sm"></div><div class="orb orb-c"></div></div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="section" id="visit">
+    <div class="section-head wipe">
+      <p class="eyebrow"><span class="mono-tag">04 — VISIT</span></p>
+      <h2 class="section-title">Follow the <em>smell.</em></h2>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card reveal">
+        <p class="mono-tag">ADDRESS</p>
+        <p><strong>801, 100 Feet Road,</strong><br>Indiranagar, Bengaluru 560038<br><span class="muted">Next to the old record store</span></p>
+      </div>
+      <div class="visit-card reveal">
+        <p class="mono-tag">HOURS</p>
+        <p><strong>Tue – Sun · 08:00 – 23:00</strong><br>Monday closed <span class="muted">(oven rest day)</span><br><span class="muted">Kitchen closes 22:30</span></p>
+      </div>
+      <div class="visit-card reveal">
+        <p class="mono-tag">DIRECT LINE</p>
+        <p>Tap below — it opens WhatsApp with your reservation half-written. <strong>We reply within 10 minutes</strong> in working hours.</p>
+        <a class="btn btn-ghost btn-sm" href="#book">Start reserving</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOOKING ============ -->
+  <section class="section" id="book">
+    <div class="booking reveal">
+      <p class="eyebrow"><span class="mono-tag">05 — RESERVE</span></p>
+      <h2 class="section-title">60 seconds to <em>your table.</em></h2>
+      <p class="section-sub">Fill this in, tap confirm — WhatsApp opens with everything pre-written. No app download, no OTP, no "we'll call you back".</p>
+      <form class="book-form" id="bookForm">
+        <label>Your name
+          <input type="text" id="fName" name="name" placeholder="e.g. Ananya Sharma" autocomplete="name" required>
+        </label>
+        <label>What are you here for?
+          <select id="fService" name="service" required>
+            <option value="Table for 2">Table for 2 — dinner</option>
+            <option value="Table for 4">Table for 4 — dinner</option>
+            <option value="Weekend Brunch Platter">Weekend Brunch Platter — ₹799</option>
+            <option value="Sourdough Loaf (Takeaway)">Sourdough Loaf takeaway — ₹299</option>
+            <option value="Mezzanine (8–20 guests)">Mezzanine — 8 to 20 guests</option>
+            <option value="Whole-cafe event">Whole-cafe event</option>
+          </select>
+        </label>
+        <label>Preferred day
+          <select id="fDay" name="day" required>
+            <option>Today</option><option>Tomorrow</option>
+            <option>This Saturday</option><option>This Sunday</option>
+            <option>Next week (weekday)</option>
+          </select>
+        </label>
+        <button type="submit" data-magnetic class="btn btn-glow btn-block">Confirm on WhatsApp</button>
+        <p class="form-note mono-tag">DEMO — OPENS WHATSAPP WITH PREFILLED TEXT · NUMBER SWAPPED FOR CLIENT'S ON LAUNCH</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="brand-name">Krust <em>Cafe</em> <span class="mono-tag">INDIRANAGAR · BENGALURU</span></p>
+    <p class="muted">Concept demo by <strong>UltraSite</strong> — futuristic websites for local businesses. Booking number is a placeholder and gets replaced with the client's real number on launch.</p>
+    <p class="mono-tag">© <span id="year">2026</span> · MADE WITH INTENT, NOT TEMPLATES</p>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="https://wa.me/919000000000?text=Hi%20Krust%20Cafe!%20I%27d%20like%20to%20reserve%20a%20table." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.5-.9 1-.6 2.6.7 4.3a11.4 11.4 0 0 0 4.4 3.9c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.1-.5-.2z"/></svg>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
