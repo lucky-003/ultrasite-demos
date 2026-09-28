@@ -265,6 +265,13 @@ a{color:inherit}
 .form-note{margin-top:6px;color:var(--muted);text-align:center}
 @media(min-width:860px){.booking{padding:54px}}
 
+/* ============ real work — instagram ============ */
+.ig-follow{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:38px;text-align:center}
+
+/* ============ tel link ============ */
+.tel{color:var(--gold);text-decoration:none;font-weight:700}
+.tel:hover{text-decoration:underline}
+
 /* ============ footer ============ */
 .footer{border-top:1px solid var(--line);padding:44px 20px;background:var(--bg1)}
 .footer-inner{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:12px}

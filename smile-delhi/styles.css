@@ -287,6 +287,26 @@ a{color:inherit}
 .reveal-line{opacity:0;animation:fadeIn 1s ease .5s forwards}
 @keyframes fadeIn{to{opacity:1}}
 
+/* ============ instagram concept gallery ============ */
+.ig-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ig-tile{
+  display:block;text-decoration:none;border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;background:var(--bg1);transition:transform .3s ease,border-color .3s ease;
+}
+.ig-tile:hover{transform:translateY(-5px);border-color:rgba(69,214,192,.5)}
+.ig-art{display:block;height:190px;border-bottom:1px solid var(--line)}
+.ig-art-1{background:radial-gradient(circle at 30% 35%,rgba(69,214,192,.55),transparent 55%),radial-gradient(circle at 72% 68%,rgba(69,214,192,.22),transparent 50%),linear-gradient(135deg,#17171d,#0c0c10)}
+.ig-art-2{background:radial-gradient(ellipse at 60% 30%,rgba(255,190,90,.35),transparent 55%),radial-gradient(circle at 30% 70%,rgba(69,214,192,.3),transparent 50%),linear-gradient(135deg,#141419,#0a0a0d)}
+.ig-art-3{background:radial-gradient(circle at 70% 30%,rgba(69,214,192,.4),transparent 55%),radial-gradient(circle at 25% 75%,rgba(69,214,192,.16),transparent 50%),linear-gradient(135deg,#121216,#0b0b0e)}
+.ig-art-4{background:radial-gradient(ellipse at 35% 25%,rgba(69,214,192,.45),transparent 55%),radial-gradient(circle at 70% 80%,rgba(255,190,90,.22),transparent 50%),linear-gradient(135deg,#16161b,#0c0c10)}
+.ig-meta{display:flex;flex-direction:column;gap:6px;padding:16px 18px}
+.ig-meta strong{font-size:15px}
+.ig-cta{margin-top:26px;text-align:center}
+.tel-link{font-family:var(--mono);font-weight:700;color:var(--gold);font-size:18px;text-decoration:none}
+.tel-link:hover{text-decoration:underline}
+@media(min-width:860px){.ig-grid{grid-template-columns:repeat(4,1fr)}.ig-art{height:220px}}
+@media (prefers-reduced-motion:reduce){.ig-tile{transition:none}}
+
 /* ============ reduced motion ============ */
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}

@@ -417,3 +417,36 @@ body.hero-go .hero-stats{animation:heroIn .9s cubic-bezier(.2,.7,.2,1) .4s forwa
   .hero-sub,.hero-ctas,.hero-stats{opacity:1;transform:none;animation:none}
   .reveal{transition-delay:0s}
 }
+
+/* ============ instagram gallery (concept styling — real embeds plug in here on launch) ============ */
+.ig-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.ig-tile{
+  background:var(--bg1);border:1px solid var(--line);border-radius:var(--r);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease;
+}
+.ig-tile:hover{transform:translateY(-5px);border-color:rgba(255,107,53,.5);box-shadow:0 18px 50px rgba(0,0,0,.5),0 0 30px rgba(255,107,53,.08)}
+.ig-tile figcaption{padding:20px 22px 24px;display:flex;flex-direction:column;gap:10px}
+.ig-tile figcaption p{color:var(--ink);font-size:15px}
+.ig-tile figcaption a{color:var(--gold);font-weight:600;font-size:14px;text-decoration:none;border-bottom:1px solid var(--gold);align-self:flex-start;padding-bottom:2px}
+.ig-art{height:220px;border-bottom:1px solid var(--line)}
+.ig-1{background:
+  radial-gradient(circle at 30% 25%,rgba(255,190,90,.55),transparent 55%),
+  radial-gradient(circle at 70% 75%,rgba(255,107,53,.35),transparent 55%),
+  linear-gradient(140deg,#1a130c,#0c0a08)}
+.ig-2{background:
+  radial-gradient(ellipse at 50% 30%,rgba(255,107,53,.5),transparent 60%),
+  radial-gradient(circle at 80% 80%,rgba(255,170,70,.28),transparent 50%),
+  linear-gradient(140deg,#14100c,#0a0908)}
+.ig-3{background:
+  radial-gradient(circle at 65% 35%,rgba(255,190,90,.45),transparent 55%),
+  radial-gradient(circle at 25% 80%,rgba(205,75,35,.35),transparent 55%),
+  linear-gradient(140deg,#16110b,#0b0a08)}
+.ig-4{background:
+  radial-gradient(circle at 40% 70%,rgba(255,150,60,.5),transparent 55%),
+  radial-gradient(circle at 75% 25%,rgba(255,107,53,.3),transparent 50%),
+  linear-gradient(140deg,#131009,#0a0806)}
+@media(min-width:860px){
+  .ig-grid{grid-template-columns:repeat(2,1fr)}
+  .ig-art{height:260px}
+}
